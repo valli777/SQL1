@@ -1,0 +1,37 @@
+create table worldcity(city varchar(30),country varchar(30),continent varchar(35),latitude decimal,NS char,longitude decimal,ES char);
+insert into worldcity values('athens','greece','europe',37.59,'N',23.44,'E'),
+('atlanta','united states','north america',33.45,'N',84.23,'W'),
+('dallas','united states','north america',32.47,'N',96.47,'W'),
+('nashville','united states','north america',36.09,'N',86.46,'W'),
+('victoria','canada','north america',48.25,'N',123.21,'W'),
+('peterborough','canada','north america',44.18,'N',79.18,'W'),
+('vancouver','canada','north america',49.18,'N',123.04,'W'),
+('toledo','united states','north america',41.39,'N',83.82,'w'),
+('warsaw','poland','europe',52.15,'N',21.00,'E'),
+('lima','peru','south america',12.03,'S',77.03,'W'),
+('rio de janeiro','brazil','south america',22.43,'S',43.13,'W'),
+('sanatiago','chile','south america',33.27,'S',70.40,'W'),
+('bogota','colombia','south america',04.36,'N',74.05,'W'),
+('buenos aires','argentina','south america',34.36,'S',58.28,'W'),
+('quito','ecuador','south america',00.13,'S',78.30,'W'),
+('caracas','venezuela','south america',10.30,'N',66.56,'W'),
+('madras','india','asia',28.36,'N',77.12,'E'),
+('bombay','india','asia',18.58,'N',72.50,'E'),
+('manchester','england','europe',51.30,'N',0.0,null),
+('moscow','russia','europe',55.45,'N',37.35,'E'),
+('paris','france','europe',48.52,'N',2.20,'E'),
+('shenyang','china','asia',41.48,'N',123.27,'E'),
+('cario','egypt','africa',30.03,'N',31.15,'E'),
+('tripoli','lybia','africa',32.54,'N',13.11,'E'),
+('beijing','china','asia',39.56,'N',116.24,'E'),
+('rome','italy','europe',41.54,'N',12.29,'E'),
+('tokyo','japan','asia',35.42,'N',139.46,'E'),
+('sydney','australia','australia',33.52,'S',151.13,'E'),
+('sparta','greece','europe',37.05,'N',22.27,'E'),
+('madrid','spain','europe',40.24,'N',3.41,'W');
+select * from worldcity;
+select DISTINCT country,continent from worldcity;
+SELECT city,country from worldcity where city like 'R%';
+SELECT city,country from worldcity where city like '%A';
+SELECT city,country from worldcity where city like 'M_____';
+SELECT city,country from worldcity where city like '_A%';
